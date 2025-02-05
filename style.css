@@ -18,7 +18,7 @@ body {
 .gameField {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 2rem;
   align-items: center;
   flex-direction: column;
 }
@@ -28,7 +28,7 @@ body {
   padding: 1rem 0;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 #restart {
@@ -41,25 +41,25 @@ body {
 
   &:hover {
     background-color: #555;
-    text-shadow: 2px 2px #000;
+    text-shadow: 0.125rem 0.125rem #000;
   }
 }
 
 .target-box {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 0.1rem solid black;
 }
 
 .option-container {
   display: flex;
-  gap: 10px;
+  gap: 0.8rem;
   justify-content: center;
 }
 
 .option {
-  width: 100px;
-  height: 50px;
+  width: 6.25rem;
+  height: 3.14rem;
   border: 1px solid black;
 }
 
