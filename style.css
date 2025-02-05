@@ -83,7 +83,8 @@ body {
   }
 
   .option {
-    height: 2rem;
+    width: 10rem;
+    height: 8rem;
   }
 }
 
@@ -97,5 +98,23 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .option-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .option-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
