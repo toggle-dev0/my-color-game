@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.gameField {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#restart {
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: #555;
+    text-shadow: 2px 2px #000;
+  }
+}
+
+.target-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.option-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.option {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#result {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .option-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  body {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .option-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Box Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="gameField">
+      <div class="top">
+        <div class="score">
+          <h1 data-testid="score">
+            Score:
+            <span id="score-id"></span>
+          </h1>
+        </div>
+        <h1 data-testid="gameInstructions">Guess the Correct Color</h1>
+        <div class="reset">
+          <button data-testid="newGameButton" id="restart">New Game</button>
+        </div>
+      </div>
+      <div data-testid="colorBox" class="target-box"></div>
+      <div data-testid="colorOption" class="option-container"></div>
+      <div>
+        <p data-testid="gameStatus" id="result">Some text</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
